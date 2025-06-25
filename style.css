@@ -1,0 +1,49 @@
+header{
+    text-align: center;
+    font-size: 30px;
+}
+
+body {
+    margin: 10px, 20px, 10px, 20px;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.josefin-sans {
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  nav {
+    text-align: right;
+    gap: 30px;
+    margin-bottom: 20px;
+    margin-right: 30px;
+    margin: 0px, 30px, 20px, 0px;
+    background-color: #7a9ec2
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding 0;
+    overflow: hidden;
+    background=color: #7a9ec2;
+  }
+
+  li {
+    float: right;
+  }
+
+  li a {
+    display:block;
+    color: white;
+    text-align:center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  li a:hover {
+    background-color: #577399
+  }
