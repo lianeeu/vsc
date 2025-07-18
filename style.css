@@ -1,11 +1,15 @@
-header{
+
+  
+  header{
     text-align: center;
     font-size: 30px;
+    color: rgb(47, 66, 96);
 }
 
 body {
     margin: 10px, 20px, 10px, 20px;
     font-family: "Josefin Sans", sans-serif;
+    background-color: #d3e4f2;
 }
 
 .josefin-sans {
@@ -15,35 +19,36 @@ body {
     font-style: normal;
   }
   
-  nav {
-    text-align: right;
-    gap: 30px;
-    margin-bottom: 20px;
-    margin-right: 30px;
-    margin: 0px, 30px, 20px, 0px;
-    background-color: #7a9ec2
-  }
+ .topnav {
+  background-color: #698bad;
+  overflow: hidden;
+ }
 
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding 0;
-    overflow: hidden;
-    background=color: #7a9ec2;
-  }
+ .topnav a {
+  float: right;
+  color: #f2f2f2;
+  background-color: #5b789b;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+ }
 
-  li {
-    float: right;
-  }
+ .topnav a:hover {
+  background-color: #3c4a77;
+  color: rgb(205, 220, 246);
+ }
 
-  li a {
-    display:block;
-    color: white;
-    text-align:center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
+.topnav a.split {
+  float: left;
+  background-color: #52749d;
+  color: white;
+}
 
-  li a:hover {
-    background-color: #577399
-  }
+.intro{
+  width: 500px;
+  border: 10px solid #6987ac;
+  text-align: left;
+  margin: 10px;
+  padding: 10px;
+}
