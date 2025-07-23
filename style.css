@@ -4,6 +4,8 @@
     text-align: center;
     font-size: 30px;
     color: rgb(47, 66, 96);
+    background-image: url("palette.png");
+   background-size: 1px;
 }
 
 body {
@@ -46,9 +48,45 @@ body {
 }
 
 .intro{
-  width: 500px;
+  width: 400px;
   border: 10px solid #6987ac;
   text-align: left;
   margin: 10px;
   padding: 10px;
+  background-color: #b2c9e4;
 }
+
+.about{
+  width: 400px;
+  border: 10px solid #6987ac;
+  text-align: left;
+  margin: 10px 50px 50px 10px;
+  padding: 10px;
+  background-color: #e4edf8;
+}
+
+.footer {
+  left: 0;
+  bottom: 0;
+  background-color: #698bad;
+  color: #f2f2f2;
+  text-align: center;
+  width: 100%;
+  padding: 3px;
+}
+
+div.scroll-container {
+  width: 400px;
+  height: 600px;
+  border: 10px solid #6987ac;
+  text-align: center;
+  margin: -525px 20px 50px 490px;
+  background-color: #eef5ff;
+  overflow: auto;
+  padding: 10px;
+}
+
+div.scroll-container img {
+  padding: 10px;
+}
+
