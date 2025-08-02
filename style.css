@@ -1,17 +1,26 @@
 
   
-  header{
+  header{ 
     text-align: center;
     font-size: 30px;
     color: rgb(47, 66, 96);
-    background-image: url("palette.png");
-   background-size: 1px;
+    background-image: url("scratchbg.png");
+    background-size: 700%;
+    width: 100%;
+    padding-top: 0.6%;
+    padding-bottom: 0.1%;
+    border-bottom: 15px double #b8d7ec;
+    border-width: 20px;
 }
 
 body {
-    margin: 10px, 20px, 10px, 20px;
-    font-family: "Josefin Sans", sans-serif;
-    background-color: #d3e4f2;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 10px 20px;
+  font-family: "Josefin Sans", sans-serif;
+  background-color: #d3e4f2;
 }
 
 .josefin-sans {
@@ -21,9 +30,10 @@ body {
     font-style: normal;
   }
   
- .topnav {
+ .topnav { /* top navigation bar */
   background-color: #698bad;
   overflow: hidden;
+  
  }
 
  .topnav a {
@@ -47,11 +57,15 @@ body {
   color: white;
 }
 
+.topnav a.split:hover{
+  background-color: #3c4a77;
+  color: rgb(205, 220, 246);
+}
 .intro{
   width: 400px;
   border: 10px solid #6987ac;
   text-align: left;
-  margin: 10px;
+  margin: -10px 20px 20px 10px;
   padding: 10px;
   background-color: #b2c9e4;
 }
@@ -60,9 +74,27 @@ body {
   width: 400px;
   border: 10px solid #6987ac;
   text-align: left;
-  margin: 10px 50px 50px 10px;
+  margin: 20px 50px 50px 10px;
   padding: 10px;
-  background-color: #e4edf8;
+  background-color: #dfebfa;
+}
+
+.startheader{
+  text-align: left;
+  margin: -640px 270px 50px 10px;
+  float:right;
+  color: #3a4c62;
+  font-size: 15px;
+}
+
+.startparagraph{
+  width: 400px;
+  border: 10px solid #6987ac;
+  text-align: left;
+  margin: -590px 25px 50px 10px;
+  padding: 10px;
+  background-color: #dfebfa;
+  float: right;
 }
 
 .footer {
@@ -71,22 +103,82 @@ body {
   background-color: #698bad;
   color: #f2f2f2;
   text-align: center;
-  width: 100%;
-  padding: 3px;
+  width: 98%;
+  padding: 1%;
+  border-top: 15px double #b8d7ec;
+  border-width: 20px;
 }
 
-div.scroll-container {
+div.scroll-container { /* scrollable images container */
   width: 400px;
-  height: 600px;
+  height: 500px;
   border: 10px solid #6987ac;
   text-align: center;
   margin: -525px 20px 50px 490px;
   background-color: #eef5ff;
-  overflow: auto;
+  position: center;
   padding: 10px;
 }
 
 div.scroll-container img {
   padding: 10px;
+}
+
+.button{ /* button for navigation */
+  border-radius: 4px;
+  border: double 10px #d8e7f9;
+  background-color: #698bad;
+  color: #f2f2f2;
+  text-align: center;
+  font-size: 28px;
+  font-family: "Josefin Sans", sans-serif;
+  padding: 10px 40px;
+  width: 300px; 
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.button-column{
+display: flex;
+flex-direction: column;
+align-items: flex-end;
+margin-top: 70px;
+}
+
+.button span:after{
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: 0;
+  transition: opacity 0.5s;
+}
+
+.button:hover span{
+  padding-right: 25px;
+}
+.button:hover span:after{
+  opacity: 1;
+  left: 0;
+}
+
+.button a{
+  text-decoration: none;
+  color: #f2f2f2;
+  font-weight: 28px;
+}
+
+
+
+#letterContent{
+  width: 600px;
+  height: 500px;
+  border: 10px solid #7a8fa9;
+  text-align: left;
+  margin: 50px 400px 60px 10px;
+  float: right;
+  padding: 10px;
+  background-color: #e8f1fb;
+  font-size: 20px;
 }
 
