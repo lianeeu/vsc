@@ -1,27 +1,54 @@
-
-  
   header{ 
     text-align: center;
-    font-size: 30px;
-    color: rgb(47, 66, 96);
-    background-image: url("scratchbg.png");
-    background-size: 700%;
+    font-size: 35px;
+    color: rgb(40, 53, 71);
+    background-image: url("placeholder.png");
+    background-size: 500% center;
     width: 100%;
     padding-top: 0.6%;
     padding-bottom: 0.1%;
-    border-bottom: 15px double #b8d7ec;
+    border-bottom: 15px double #93adc7;
     border-width: 20px;
 }
 
-body {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin: 10px 20px;
-  font-family: "Josefin Sans", sans-serif;
-  background-color: #d3e4f2;
+header h1 {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 70px;
+    font-weight: 40%;
+    font-style: normal;
+    margin-bottom: 5px;
+    padding: 0;
+    color: #2d4459
 }
+
+header h3 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 35px;
+  font-weight: 20%;
+  font-style: normal;
+  margin-top: 25px;
+  padding: 0;
+  color: #577085
+}
+
+body {
+  height: 100%;
+    margin: 0;
+    font-family: "Josefin Sans", sans-serif;
+    background-image: url(background3.png);
+    background-size: 100%;
+    background-repeat: repeat;
+    animation: diagonalscroll 90s linear infinite;
+}
+
+@keyframes diagonalscroll {
+      0% {
+        background-position: 0 0;
+      }
+      100% {
+        background-position: -100% -100%;
+      }
+    }
 
 .josefin-sans {
     font-family: "Josefin Sans", sans-serif;
@@ -31,15 +58,17 @@ body {
   }
   
  .topnav { /* top navigation bar */
-  background-color: #698bad;
+  background-color: #5e7a9a;
   overflow: hidden;
+  position: relative;
+  z-index: 1;
   
  }
 
  .topnav a {
   float: right;
-  color: #f2f2f2;
-  background-color: #5b789b;
+  color: #f7f9ff;
+  background-color: #485d75;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -47,87 +76,107 @@ body {
  }
 
  .topnav a:hover {
-  background-color: #3c4a77;
-  color: rgb(205, 220, 246);
+  background-color: #2c3f52;
+  color: rgb(255, 255, 255);
  }
 
 .topnav a.split {
   float: left;
-  background-color: #52749d;
+  background-color: #485d75;
   color: white;
 }
 
 .topnav a.split:hover{
-  background-color: #3c4a77;
-  color: rgb(205, 220, 246);
+  background-color: #2c3f52;
+  color: rgb(255, 255, 255);
 }
+
+.headertext{
+  text-align: left;
+  margin: 5px 5px 20px 25px;
+  float:left;
+  color: #2d4459;
+  font-size: 15px;
+}
+
 .intro{
   width: 400px;
-  border: 10px solid #6987ac;
+  border: 10px solid #6882a2;
   text-align: left;
-  margin: -10px 20px 20px 10px;
+  margin: 60px 40px 20px 20px;
   padding: 10px;
-  background-color: #b2c9e4;
+  background-color: #bbcde2;
 }
 
 .about{
   width: 400px;
-  border: 10px solid #6987ac;
+  border: 10px solid #6882a2;
   text-align: left;
-  margin: 20px 50px 50px 10px;
+  margin: 20px 50px 50px 20px;
   padding: 10px;
   background-color: #dfebfa;
+  gap: 20px;
 }
 
 .startheader{
   text-align: left;
-  margin: -640px 270px 50px 10px;
+  margin: -590px 275px 50px 10px;
   float:right;
-  color: #3a4c62;
+  color: #2d4459;
   font-size: 15px;
 }
 
 .startparagraph{
   width: 400px;
-  border: 10px solid #6987ac;
+  border: 10px solid #637d9d;
   text-align: left;
-  margin: -590px 25px 50px 10px;
+  margin: -535px 25px 50px 10px;
   padding: 10px;
   background-color: #dfebfa;
   float: right;
 }
 
 .footer {
+  clear: both;
   left: 0;
   bottom: 0;
-  background-color: #698bad;
+  background-color: #5e7a9a;
   color: #f2f2f2;
   text-align: center;
   width: 98%;
-  padding: 1%;
-  border-top: 15px double #b8d7ec;
+  border-top: 15px double #d7e9ff;
   border-width: 20px;
+  padding: 14px 16px;
+
+  
 }
 
 div.scroll-container { /* scrollable images container */
   width: 400px;
-  height: 500px;
-  border: 10px solid #6987ac;
+  height: 435px;
+  border: 10px solid #516683;
   text-align: center;
-  margin: -525px 20px 50px 490px;
+  margin: -530px 50px 50px 490px;
   background-color: #eef5ff;
-  position: center;
-  padding: 10px;
+  float: center;
+  padding: 15px;
+  overflow: auto;
+  white-space: nowrap;
 }
 
 div.scroll-container img {
-  padding: 10px;
+  padding: 30px;
+  width: 330px;
+  height: 370px;
+  border: 4px solid #6987ac;
+  margin-right: 20px;
 }
 
 .button{ /* button for navigation */
+  position:relative;
   border-radius: 4px;
   border: double 10px #d8e7f9;
-  background-color: #698bad;
+  background-color: #57728d;
   color: #f2f2f2;
   text-align: center;
   font-size: 28px;
@@ -136,30 +185,43 @@ div.scroll-container img {
   width: 300px; 
   cursor: pointer;
   transition: all 0.5s;
+  text-decoration: none;
 }
 
 .button-column{
 display: flex;
 flex-direction: column;
 align-items: flex-end;
-margin-top: 70px;
+margin: -420px 25px 50px 10px;
+padding: 20px;
+gap: 30px;
+
+}
+
+.button-span{
+  position: relative;
+  display: inline-block;
+  padding-right: 20px;
+  transition: padding-right 0.5s, transform 0.5s;
 }
 
 .button span:after{
   content: '\00bb';
   position: absolute;
+  transform: translateY(-50%);
   opacity: 0;
-  top: 0;
-  right: 0;
-  transition: opacity 0.5s;
+  top: 50%;
+  right: 0px;
+  transition: opacity 0.5s, right 0.5s;
 }
 
 .button:hover span{
   padding-right: 25px;
+  transform: translateX(10px);
 }
 .button:hover span:after{
   opacity: 1;
-  left: 0;
+  right: 50px;
 }
 
 .button a{
@@ -168,17 +230,82 @@ margin-top: 70px;
   font-weight: 28px;
 }
 
-
-
-#letterContent{
-  width: 600px;
-  height: 500px;
-  border: 10px solid #7a8fa9;
+#letterTitle{
+  width: 400px;
+  height: 25px;
+  border: 10px solid #66788e;
   text-align: left;
-  margin: 50px 400px 60px 10px;
-  float: right;
-  padding: 10px;
+  margin: 50px 100px 0px 390px;
+  float: left;
+  padding: 5px;
   background-color: #e8f1fb;
   font-size: 20px;
+  font-family: "Josefin Sans", sans-serif;
+  color: #465466;
+  position:relative;
 }
 
+.backgroundbox{
+  border: 10px solid #5d748f;
+  background-color: #cbd8e7;
+  height: 970px;
+  position: absolute; 
+  left: 350px;      
+  width: 720px;   
+  top: 0;
+  bottom: 0;  
+
+}
+
+#letterDate{
+  width: 170px;
+  height: 25px;
+  border: 10px solid #66788e;
+  text-align: left;
+  margin: -55px 400px 0px 390px;
+  float: right;
+  padding: 5px;
+  background-color: #e8f1fb;
+  font-size: 20px;
+  font-family: "Josefin Sans", sans-serif;
+  color: #465466;
+  position: relative;
+}
+
+#letterContent{
+  position: relative;
+  width: 600px;
+  height: 700px;
+  border: 10px solid #7a8fa9;
+  text-align: left;
+  margin: 20px 400px 80px 10px;
+  float: right;
+  padding: 10px;
+  font-size: 20px;
+  font-family: "Josefin Sans", sans-serif;
+  text-decoration: none;
+  outline: none;
+  color: #465466;
+  line-height: 25px;
+  background-image: repeating-linear-gradient(
+    to bottom,
+    #72839a 0px,
+    #72839a 3px,
+    #dfe9f6 2px,
+    #dfe9f6 35px
+  );
+  line-height: 35px;
+  background-attachment: local;
+}
+
+input:focus {
+  outline: none;
+}
+
+input::placeholder{
+  color:#677687;
+}
+
+textarea::placeholder{
+  color: #677687;
+}
