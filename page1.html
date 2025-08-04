@@ -18,15 +18,79 @@
 </div> 
 
 <body>
-
-    <div class="letterwrapper">
-    <div class="backgroundbox"> <!-- background box for writing letters -->
-    </div>
-
-    <input type="text" id="letterTitle" placeholder="Name your letter...">
-    <input type="text" id="letterDate" placeholder="Date...">
-    <textarea id="letterContent" rows="10" placeholder="Write your letter here..."></textarea>
+    <!-- javascript to help with opening the form -->
+    <script> 
+        function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+    </script>
+<div class="inspoBox"> <!-- paragraph box with inspiration for letters -->
+<p> Need help getting started? <br> Here's a few ideas for your letter! </p>
 </div>
 
+<div class="inspoList"> <!-- list of ideas for letters -->
+  <ul class="ideas"> 
+    <li> Write a letter to yourself a year from now </li> <br>
+    <li> Write something to your childhood self, or yourself far in the future </li> <br>
+    <li> A letter to an old friend of yours, who you haven't seen in a long time</li> <br>
+    <li> Something for a family member, or even a pet</li> <br>
+    <li> A letter to yourself during a certain time, like a difficult moment, or a really happy one! </li> <br>
+    <li> Write a letter to a stranger, or someone you don't know very well, you could introduce yourself, tell them a story, or give them a nice inspirational message! </li> <br>
+    <li> Write something to someone who you admire</li> <br>
+    <li> A letter towards your favourite characters</li> <br>
+    <li> Something to address your unspoken thoughts, the things you wish you could say</li> <br>
+    <li> A letter to the world, or even the universe</li> <br>
+    <li> Write a letter to your future children, or grandchildren</li> <br>
+    <li> Write to someone who you never got to say goodbye to</li> <br>
+  </ul>
+  </div>
+
+  <div class="finishParagraph"> <!-- paragraph box w/ instructions for finishing-->
+    <p> When you're done writing your letter, check one of the boxes below to choose whether you'd like to keep your letter private, or make it public. If you'd like to make it public, other users will be able to read it on the 'Read Letters' page! After that, click on the 'Finish Letter' button on the bottom right of your screen, sign in, and you're done! </p>
+  </div>
+
+    <div class="backgroundbox"> <!-- background box for writing letters -->
+    </div>
+    <input type="text" id="letterTitle" placeholder="Name your letter - e.g. To my future self">
+    <input type="text" id="letterDate" placeholder="Date...">
+    <textarea id="letterContent" rows="10" placeholder="To ______,"></textarea>
+
+    <!-- checkboxes for public/privated letters -->
+     <div class="checkboxes">
+    <label class="container"> I'd like my letter to be private 
+      <input type="checkbox" checked="checked">
+      <span class="checkmark"></span>
+    </label> <br>
+    <label class="container"> I'd like my letter to be public
+      <input type="checkbox">
+      <span class="checkmark"></span>
+    </label>
+    </div>
+ 
+     <!-- sign in form -->
+    <button class="open-button" onclick="openForm()">Finish Letter !</button>
+    <div class="form-popup" id="myForm">
+        <form class="form-container" onsubmit="event.preventDefault(); alert('Signed in! Your letter has been saved. Good job! :D');">
+        <h1>Sign in to finish your letter!</h1>
+      
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email" >
+      
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" >
+      
+        <button type="submit" class="btn">Sign In</button>
+        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+      </div>
+
+    <footer>
+      <div class="footer"> <!-- adding footer -->
+      <p> About us     ||     Privacy Policy     ||     Support     ||     All images used are original     ||  2025  </p>
+      </div> 
+   </footer>
 </body>
 </html>

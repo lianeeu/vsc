@@ -2,8 +2,9 @@
     text-align: center;
     font-size: 35px;
     color: rgb(40, 53, 71);
-    background-image: url("placeholder.png");
-    background-size: 500% center;
+    background-image: url("HeaderImage.png");
+    background-size: 110%;
+    background-position: center -10px;
     width: 100%;
     padding-top: 0.6%;
     padding-bottom: 0.1%;
@@ -13,22 +14,27 @@
 
 header h1 {
     font-family: "Josefin Sans", sans-serif;
-    font-size: 70px;
+    font-size: 80px;
     font-weight: 40%;
     font-style: normal;
     margin-bottom: 5px;
     padding: 0;
-    color: #2d4459
+    color: #2d4459;
 }
 
 header h3 {
   font-family: "Josefin Sans", sans-serif;
-  font-size: 35px;
-  font-weight: 20%;
+  font-size: 25px;
+  font-weight: 500;
   font-style: normal;
   margin-top: 25px;
   padding: 0;
-  color: #577085
+  color: #314355;
+  background-color: #6b89a8;
+  width: 400px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  overflow: hidden;
 }
 
 body {
@@ -106,6 +112,7 @@ body {
   margin: 60px 40px 20px 20px;
   padding: 10px;
   background-color: #bbcde2;
+  color:rgb(40, 53, 71)
 }
 
 .about{
@@ -116,6 +123,7 @@ body {
   padding: 10px;
   background-color: #dfebfa;
   gap: 20px;
+  color:rgb(40, 53, 71)
 }
 
 .startheader{
@@ -134,6 +142,7 @@ body {
   padding: 10px;
   background-color: #dfebfa;
   float: right;
+  color:rgb(40, 53, 71)
 }
 
 .footer {
@@ -158,7 +167,6 @@ div.scroll-container { /* scrollable images container */
   text-align: center;
   margin: -530px 50px 50px 490px;
   background-color: #eef5ff;
-  float: center;
   padding: 15px;
   overflow: auto;
   white-space: nowrap;
@@ -233,9 +241,9 @@ gap: 30px;
 #letterTitle{
   width: 400px;
   height: 25px;
-  border: 10px solid #66788e;
+  border: 5px solid #7488a0;
   text-align: left;
-  margin: 50px 100px 0px 390px;
+  margin: 45px 100px 0px 70px;
   float: left;
   padding: 5px;
   background-color: #e8f1fb;
@@ -248,7 +256,8 @@ gap: 30px;
 .backgroundbox{
   border: 10px solid #5d748f;
   background-color: #cbd8e7;
-  height: 970px;
+  margin-top: 60px;
+  height: 880px;
   position: absolute; 
   left: 350px;      
   width: 720px;   
@@ -260,9 +269,9 @@ gap: 30px;
 #letterDate{
   width: 170px;
   height: 25px;
-  border: 10px solid #66788e;
+  border: 5px dotted #66788e;
   text-align: left;
-  margin: -55px 400px 0px 390px;
+  margin: -45px 400px 0px 390px;
   float: right;
   padding: 5px;
   background-color: #e8f1fb;
@@ -308,4 +317,204 @@ input::placeholder{
 
 textarea::placeholder{
   color: #677687;
+}
+
+.open-button {
+  background-color: #4c5e72;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+  font-family: "Josefin Sans", sans-serif; 
+  font-size: 20px;
+}
+
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 5px solid rgb(88, 117, 148);
+  border-radius: 15px;
+  z-index: 9;
+  animation: slideUp 0.4s ease-out;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+.form-container {
+  max-width: 300px;
+  width: 270px;
+  padding: 10px;
+  background-color: #ccdaea;
+  color: #4f6782;
+  border-radius: 15px;
+}
+
+.form-container input[type=text], .form-container input[type=password] {
+  width: 85%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: 3px solid #718eb0;
+  background: #f1f1f1;
+  font-family: "Josefin Sans", sans-serif; 
+}
+
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #d3def1;
+  outline: none;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.form-container .btn {
+  background-color: #62738a;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+  font-size: 15px;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.form-container .cancel {
+  background-color: rgb(51, 66, 82);
+}
+
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+.inspoBox{
+  width: 280px;
+  float: left;
+  background-color:#98acc3;
+  margin: 20px 0px 0px 20px;
+  border: 7px solid #4d647e;
+  padding: 5px;
+  color: #242e3b;
+}
+
+.inspoList{
+  width: 280px;
+  float: left;
+  background-color: #dfebfa;
+  margin: 120px 0px 0px -305px;
+  border: 7px solid #5e7a9a;
+  padding: 5px;
+  color: #242e3b;
+  border-radius: 15px;
+}
+
+.ideas{
+  list-style: none;
+  padding-left: 0;
+}
+
+.ideas li {
+  display: flex;
+  align-items: center;
+}
+
+.ideas li::before {
+  content: "\2605";
+  margin-right: 8px;
+  margin-bottom: 10px;
+  color:rgb(76, 102, 130)
+}
+
+.finishParagraph{
+  width: 280px;
+  float: right;
+  background-color:#98acc3;
+  margin: 20px 20px 0px -500px;
+  border: 7px solid #4d647e;
+  padding: 5px;
+  color: #242e3b;
+}
+
+.checkboxes{
+  width: 270px;
+  float: right;
+  background-color:#ccdef2;
+  margin: -670px 20px 0px 500px;
+  border: 7px solid #657f9d;
+  border-radius: 15px;
+  padding: 10px;
+  color: #242e3b;
+}
+
+.container{
+  display: block;
+  position: relative;
+  padding-left: 5px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.container input {
+  position: relative;
+  margin-right: 20px;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  right: 22px;
+  height: 20px;
+  width: 20px;
+  background-color: #9eb9da;
+  border-radius: 50%;
+}
+
+.container:hover input ~ .checkmark {
+  background-color: #e3efff;
+}
+
+.container input:checked ~ .checkmark {
+  background-color: #5a7791;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.container .checkmark:after {
+  top: 6px;
+  right: 6px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #dde7f6;
 }
