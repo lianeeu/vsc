@@ -17,13 +17,73 @@
     <a href="page1.html">|  Start Writing  |</a>
 </div> 
 
-<body>
-    <h1> Page 2</h1>
+<body> 
+    <div class="header2"> <!-- header to introduce the page -->
+        <h1>- LETTERS - </h1>
+     </div>
 
-    <footer>
-        <div class="footer"> <!-- adding footer -->
-            <p> About us     ||     Privacy Policy     ||     Support     ||     All images used are original     ||  2025  </p>
+     <div class="subParagraph"> <!-- subheader / mini paragraph under title -->
+        <p> These are the letters from our users who've uploaded their work to share! Here, you can take a look at the things that other people have wanted to say and indulge in their stories. Feel free to use these as inspiration for writing your own letter!</p>
+     </div>
+
+     <div class="gallerybackground"> <!-- background -->
+    </div>
+
+    <div class="letterheader">
+        <p> -- NEW LETTERS -- </p> 
+    </div>
+    
+    <div class="galleryWrapper"> <!-- container so i can add scroll arrows-->
+        <div class="scroll-arrow left" onclick="scrollGallery(-1)">&#10094;</div>
+    <div class="scroll-container1"> <!-- scrolling images displaying letters-->
+        <img src="Letter1.png" alt="Letter to future self">
+        <img src="Letter2.png" alt="Letter to a friend">
+        <img src="Letter3.png" alt="Letter to a stranger">
+        <img src="Letter4.png" alt="Letter to someone from the past">
     </div> 
-    </footer>
+    <div class="scroll-arrow right" onclick="scrollGallery(1)">&#10095;</div>
+</div> 
+
+<button id="myBtn">SEE MORE</button> <!-- see more button, with pop-up to sign in -->
+<div id="myModal" class="modal">
+
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p> Please sign up or log in to view more of our letters! You can do this in the 'My Account' tab at the top right of your screen. Thank you! </p>
+  </div>
+
+</div>
+
+<footer>
+    <div class="footer"> <!-- adding footer -->
+        <p> About us     ||     Privacy Policy     ||     Support     ||     All images used are original     ||  2025  </p>
+    </div> 
+</footer>
+
+<!-- javascript to make the scroll arrows functional + open popups -->
+<script> 
+    function scrollGallery(direction) {
+        const gallery = document.querySelector('.scroll-container1');
+        const scrollAmount = 220; 
+        gallery.scrollBy({ left: scrollAmount * direction, behavior: 'smooth' });
+        }
+
+var modal = document.getElementById("myModal");
+
+var btn = document.getElementById("myBtn");
+
+var span = document.getElementsByClassName("close")[0];
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+span.onclick = function() {
+  modal.style.display = "none";
+}
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+    </script>
 </body>
 </html>
